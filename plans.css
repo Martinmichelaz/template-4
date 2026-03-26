@@ -1,0 +1,121 @@
+:root {
+    --free-green: #28a745;
+    --blue-color: #007bff;
+    --premium-orange: #f39c12;
+    --text-dark: #333;
+    --icon-grey: #adb5bd;
+    --border-light: #f1f1f1;
+}
+main .all{
+	display: grid;
+	grid-template-columns:repeat(auto-fill,minmax(450px ,1fr));
+	grid-auto-rows: fit-content;
+	gap: 20px ;
+}
+
+@media (max-width: 768px) {
+  main .all{
+    grid-template-columns:repeat(auto-fit,minmax(10%,100%));
+	gap: 5px ;
+  }
+}
+
+.pricing-card {
+    background: #fff;
+    padding: var(--mainP);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+
+.header {
+    color: white;
+    text-align: center;
+    padding: var(--mainP) 15px;
+    margin-bottom: 20px;
+    border: 4px double rgba(255, 255, 255, 0.8);
+}
+
+.header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.header .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.header .price span {
+    font-size: 1.4rem;
+    vertical-align: super;
+    margin-right: 2px;
+}
+
+.header-free { background-color: var(--free-green); }
+.header-basic { background-color: var(--blue-color); }
+.header-premium { background-color: var(--premium-orange); }
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features li {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-light);
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+.icon-check {
+    color: var(--free-green);
+    width: 30px;
+}
+
+.icon-xmark {
+    color: #e74c3c;
+    width: 30px;
+}
+
+.icon-info {
+    margin-left: auto;
+    color: var(--icon-grey);
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.btn {
+    border: none;
+    padding: 12px var(--mainP);
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+    width: fit-content;
+    font-size: 0.9rem;
+}
+
+.btn-free { background-color: var(--free-green); }
+.btn-basic { background-color: var(--blue-color); }
+
+.current-plan-text {
+    text-align: center;
+    color: #aaa;
+    font-size: 0.95rem;
+    margin-top: 30px;
+    font-style: italic;
+}

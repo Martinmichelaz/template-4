@@ -1,0 +1,973 @@
+
+
+main .all .information {
+	border-radius: 10px;
+	overflow-y: hidden;
+	
+}
+
+main .all .information .top,
+main .all .information .bottom{
+	padding: var(--mainP);
+} 
+
+@media (max-width: 768px) {
+main .information{
+	padding-bottom: 25px;
+	text-align: center !important
+}
+	main .all .information .top,
+  main .all .information .bottom{
+		padding: 20px;
+	}
+}
+
+main .all .information .top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--border-color);
+}
+main .all .information .top .text{
+	margin-right: 20px;
+	text-transform: capitalize;
+}
+main .all .information .top .text p{
+	color: black;
+}
+
+
+main .all .bottom{
+	background-color: white;
+	position: relative;
+	height: 100%; 
+}
+main .all .bottom .for-image{
+	width : 60px;
+	height: 60px;
+	position: absolute;
+	top: -30px;
+	left : 40px;
+	border-radius: 50%;
+	border:  3px solid white ;
+}
+main .all .bottom .info{
+	display: flex;
+	justify-content: space-around;
+	align-items: center; 
+	flex-wrap: wrap;
+	padding: 10px ;
+	margin: 20px 0 30px;
+	position: relative;
+	border: 1px solid var(--border-color);
+	text-align: center;
+}
+@media(max-width: 768px){
+main .all .information .info div{
+	width: 100%;
+}
+}
+
+main .all .bottom button{
+	background-color: #0091eb;
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	color: white ;
+	position: absolute;
+	bottom: -60px;
+	right: 10px; 
+	text-align: center;
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+}
+
+main .all .draft{
+	background-color: white;
+	text-transform: capitalize;
+	border-radius: 10px;
+	padding: 0 var(--mainP) calc(var(--mainP) + 10px)
+}
+main .all .draft .text{
+	padding: var(--mainP) var(--mainP) 0;
+	margin-bottom: -15px;
+
+}
+main .all .draft .inputs{
+	position: relative;
+display: flex;
+	 justify-content: center;
+	align-items: space-around;
+	flex-wrap: wrap;
+	margin-left: 10px; 
+	margin: 10px auto;
+	width:90%;
+}
+main .all .draft input{
+	margin: 30px 0;
+	width: 90%;
+	padding: 10px;
+	margin-bottom: 20px;
+	display: block;
+	background-color: var(--border-color);
+	border: none;
+	
+}
+main .all .draft textarea{
+	width: 90%;
+	resize: none ;
+	height: 170px;
+	background-color: var(--border-color);
+	border: none;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+main .all .draft button{
+		background-color: #0091eb;
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	color: white ;
+	position: absolute;
+	bottom: -50px; 
+	right: 25px;
+}
+@media (max-width:991px){
+	main .all .draft .inputs{
+		padding-bottom: 60px;
+		width: 100%;
+		margin-left: -5px
+}
+	main .all .draft textarea{
+		height: 130px;
+		}
+	main .all .draft button{
+		bottom: 0px
+		}
+	}
+
+main .all .target{
+	text-transform: capitalize;
+	background-color: white;
+	border-radius: 10px;
+	padding:var(--mainP)
+}
+
+main .all .target .content{
+	padding-left: var(--mainP);
+	margin-top: -15px;
+}
+@media (max-width: 768px) {
+	main .all .target .content {
+		margin-top: 10px;
+	}
+}
+
+main .all .target .content .money,
+main .all .target .content .projects,
+main .all .target .content .team{
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+
+}
+
+
+main .all .target .text {
+	padding: var(--mainP) var(--mainP) ;
+}
+
+main .all .percentage{
+	margin-left: 20px;
+	width: 100%;
+}
+
+main .all .target .content .money i,
+main .all .target .content .projects i,
+main .all .target .content .team i {
+	width: 60px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+main .all .target .content .line{
+	height: 5px;
+	background-color: var(--border-color);
+	position: relative;
+}
+
+main .all .target .content .line .fill{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+
+main .all .target .content .line::before{
+	position: absolute;
+	top: -45px;
+	width: fit-content;
+	font-weight: 800;
+	padding: 15px 5px;
+	height: 20px;
+	border-radius: 5px;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+
+main .all .target .content .money .line::before{
+content:'80%';
+	left: 75%
+}
+
+main .all .target .content .projects .line::before{
+	left: 50%;
+	content:'55%';
+}
+
+main .all .target .content .team .line::before{
+	left: 70%;
+	content:'75%';
+}
+
+main .all .target .content .line::after{
+content: '';
+	position: absolute;
+	top: -15px;
+	width: 0;
+	font-weight: 800;
+	height: 0;
+	border-width: 10px;
+	border-style: solid;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+main .all .target .content .money .line::after{
+	left: 78%;
+	border-color: #0096ffb6 transparent transparent transparent;
+}
+
+main .all .target .content .projects .line::after{
+	left: 53%;
+	border-color: #ffa300bc transparent transparent transparent;
+}
+
+main .all .target .content .team .line::after{
+	left: 73%;
+	border-color: #85ff74c5 transparent transparent transparent;
+}
+
+main .all .target .content .money i,
+main .all .target .content .money .fill,
+main .all .target .content .money .line::before{
+	background-color: #0096ffb6;
+	color: white;
+}
+
+main .all .target .content .projects i,
+main .all .target .content .projects .fill,
+main .all .target .content .projects .line::before{
+	background-color: #ffa300bc;
+	color: white;
+}
+
+main .all .target .content .team i,
+main .all .target .content .team .fill,
+main .all .target .content .team .line::before{
+	background-color: #85ff74c5;
+	color: white;
+}
+
+main .all .statistics {
+	border-radius: 10px;
+	background-color: white;
+	padding: var(--mainP)
+}
+
+main .all .statistics .statistics-title{
+	margin-bottom: 40px;
+	margin-left: 10px;
+}
+
+main .all .statistics .statistics-content{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+main .all .statistics .statistics-content div{
+	width: 40%;
+	text-align: center;
+	text-transform: capitalize;
+	border-radius: 10px;
+	border: 2px solid #c7c6c6aa;
+	margin-bottom:	30px;
+	padding: 25px 10px;
+}
+
+@media(max-width: 768px){
+main .all .statistics .statistics-content div{
+		width: 100%;
+	}
+}
+
+main .all .statistics .statistics-content div i{
+font-weight:bold;
+font-size:30px;
+}
+
+main .all .statistics .statistics-content div:nth-child(1) i{
+	color: #ffa300bc
+}
+main .all .statistics .statistics-content div:nth-child(2) i{
+	color: #0091eb
+} 
+main .all .statistics .statistics-content div:nth-child(3) i{
+	color: #07ff72aa
+}
+main .all .statistics .statistics-content div:nth-child(4) i{
+	color: red
+}
+
+main .all .news{
+		background-color: white;
+	text-transform: capitalize;
+	border-radius: 10px;
+	padding: var(--mainP)
+}
+
+main .all .news .title{
+	margin-bottom: 40px;
+	margin-left: 10px;
+}
+
+main .all .news .parent .new{
+	display : flex;
+	justify-content: space-between;
+	align-items: center ;
+	flex-wrap: wrap;
+	border-bottom: 2px solid var(--border-color);
+	padding: 10px;
+}
+
+@media(max-width: 768px){
+	main .all .news .parent .new{
+		flex-wrap: wrap;
+	}
+}
+main .all .news .parent .new .for-image{
+width: 25%;
+height: 100px;
+}
+
+main .all .news .parent .new .for-image img{
+	border-radius: 10px;
+}
+
+main .all .news .parent .new .text{
+width: 50%;
+height: fit-content
+}
+
+main .all .news .parent .new .days{
+background-color: var(--border-color);
+font-weight: bold;
+padding: 5px;
+width: 12%;
+text-align: center;
+}
+
+@media(max-width: 768px){
+	main .all .news .parent .new .for-image,
+	main .all .news .parent .new .text,
+	main .all .news .parent .new .days{
+		width: 100%;
+		margin-bottom: 10px;
+		height: fit-content
+	}
+	main .all .news .parent .new .text{
+		margin-left: 2px;
+		/* font-size: 18px */
+	}
+}
+
+main .all .tasks{
+  background-color: white;
+	text-transform: capitalize;
+	border-radius: 10px;
+	padding: var(--mainP)
+}
+
+main .all .tasks .title{
+	margin-bottom: 40px;
+	margin-left: 10px;
+}
+main .all .task{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 0;
+  border-bottom:1px solid var(--border-color);
+}
+
+main .all .task h4{
+  margin:0;
+}
+
+main .all .task p{
+  margin: 5px 0 0;
+  color:gray;
+}
+
+main .all .task i{
+  cursor: pointer;
+  color:#666;
+}
+
+main .all .task i:hover{
+	color: red;
+}
+
+main .all .removed{
+  text-decoration:line-through;
+  opacity:0.5;
+}
+
+main .all .top-searches {
+    background-color: white;
+    border-radius: 10px;
+    padding: var(--mainP);
+}
+
+main .all .top-searches .title {
+    margin-bottom: 30px;
+}
+
+main .all .top-searches .header-row {
+    display: flex;
+    justify-content: space-between;
+    color: var(--grey-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main .all .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+main .all .item h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+main .all .item .count {
+    background-color: var(--border-color);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main .all .latest-uploads {
+    background-color: white;
+	text-transform: capitalize;
+	border-radius: 10px;
+	padding: var(--mainP)
+}
+main .all .latest-uploads .title{
+	margin-bottom: 40px;
+	margin-left: 10px;
+}
+
+main .all .latest-uploads .title h2 {
+    font-size: 24px;
+}
+
+main .all .upload-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+main .all .upload-item:last-child {
+    border-bottom: none;
+}
+
+main .all .upload-item .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+main .all .upload-item .for-image {
+    width: 50px;                   
+    height: 50px; 
+    margin-right: 15px;
+}
+
+
+main .all .upload-item .text h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+main .all .upload-item .text p {
+    margin: 2px 0 0;
+    color: var(--grey-color);
+}
+
+main .all .upload-item .size {
+    background-color: var(--border-color);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.reminders {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.reminders .title h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.reminders .reminder-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  border-left: 2px solid;
+}
+
+.reminders .reminder-item:last-child {
+  margin-bottom: 0;
+}
+
+.reminders .reminder-item .text h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.reminders .reminder-item .text p {
+  margin: 0;
+  font-size: 13px;
+  color: #777;
+}
+
+.reminders .reminder-item.blue {
+	border-color: var(--blue-color);
+	}
+	
+.reminders .reminder-item.green { 
+	border-color: #22c55e;
+	}
+	
+.reminders .reminder-item.orange { 
+	border-color: #f59e0b; 
+}
+
+.reminders .reminder-item.red { 
+	border-color: #f44336;
+	}
+
+main .all .progress {
+	    background-color: white;
+    border-radius: 10px;
+    padding: var(--mainP);
+}
+
+main .all .progress .title{
+	margin-bottom: 40px;
+	margin-left: 10px;
+}
+
+main .all .progress .content div.circle-parent{
+	display: flex;
+	align-items: center;
+}
+
+main .all .progress .circle{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+margin-right: 15px;
+position: relative;
+border : 1px solid var(--blue-color);
+padding: 2px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main .all .progress .fill{
+	background-color: var(--blue-color);
+	width: 99%;
+	height: 99%;
+	border-radius: 50%;
+	border: 1px solid white; 
+} 
+
+
+main .all .progress .circle:not(.diff-circle-white)::after,
+main .all .progress .diff-circle::after {
+	content: '';
+	background-color: var(--blue-color);
+	position: absolute;
+	height: 21px;
+	width: 2px;
+	bottom: -21px
+}
+
+main .all .progress .diff-circle{
+	background-color: white;
+}
+
+main .all .progress .diff-circle::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	animation-name: comes-bigger;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: end;
+	border-radius: 50%; 
+	border: 2px solid white;
+	background-color:var(--blue-color) ;
+} 
+
+@keyframes comes-bigger {
+  0%,
+  50%,
+  100% {
+	opacity: 1;
+  }
+  25%,
+  75% {
+	opacity: 0;
+  }
+}
+@media(max-width: 768px){
+	main .all .progress .circle:not(.diff-circle-white)::after,
+main .all .progress .diff-circle::after{
+	width : 2px;
+	height: 19px;
+	bottom: -19px
+  }
+}
+
+main .all .reminders-card {
+    background: white;
+    padding: var(--mainP);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+main .all .reminders-card li{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+main .all .reminders-card li .info{
+	width: 95%;
+}
+
+main .all .reminders-card .title {
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+main .all .reminders-card .reminders-list {
+    list-style: none;
+    padding-left:20px ;
+    margin: 0;
+}
+
+main .all .reminders-card .reminder-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+padding-left: 15px;
+    border-left: 2px solid #ccc; 
+}
+
+main .all .reminders-card  .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    position: absolute;
+    left: -25px;
+}
+
+main .all .reminders-card  .info .task-name {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+}
+
+main .all .reminders-card .info .date {
+    font-size: 14px;
+    color: var(--grey-color);
+    display: block;
+    margin-top: 5px;
+}
+
+main .all .reminders-card .blue { 
+	border-left-color: var(--blue-color);
+	}
+main .all .reminders-card  .blue .dot {
+	background-color: var(--blue-color);
+	}
+
+main .all .reminders-card .green { 
+	border-left-color: #22c55e;
+	}
+	
+main .all .reminders-card .green .dot { 
+	background-color: #22c55e;
+	}
+
+main .all .reminders-card .orange { 
+	border-left-color: #f59e0b;
+	}
+	
+main .all .reminders-card .orange .dot {
+	background-color: #f59e0b; 
+	
+}
+
+main .all .reminders-card .red { 
+	border-left-color: #f44336;
+	}
+main .all .reminders-card .red .dot { 
+	background-color: #f44336;
+	}
+	
+	main .all .latest-post-card {
+    background-color: white;
+    padding: var(--mainP);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    
+}
+
+main .all .latest-post-card .title {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+main .all .post-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+main .all .post-header .for-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd; 
+}
+
+main .all .post-header .name {
+    margin: 0;
+    font-size: 16px;
+}
+
+main .all .post-header .time {
+    color: var(--grey-color);
+    font-size: 13px;
+}
+
+/* Content */
+main .all .post-content {
+    line-height: 1.6;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 25px 0;
+    margin: 0;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Footer: Likes/Comments */
+main .all .post-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    color: var(--grey-color);
+    font-size: 14px;
+}
+	
+	main .all .social-stats {
+    background-color: white;
+    padding: var(--mainP);
+    border-radius: 10px;
+}
+
+main .all .stat-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    gap: 15px;
+}
+
+main .all .stat-row .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+main .all .stat-row .info {
+    flex-grow: 1;
+    font-weight: 500;
+}
+
+main .all .stat-row .btn {
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+
+.twitter { background-color: rgba(29, 161, 242, 0.2); }
+.twitter .icon, .twitter .btn { background-color: #1da1f2; }
+.twitter .info { color: #1da1f2; }
+
+.facebook { background-color: rgba(24, 119, 242, 0.2); }
+.facebook .icon, .facebook .btn { background-color: #1877f2; }
+.facebook .info { color: #1877f2; }
+
+
+.youtube { background-color: rgba(255, 0, 0, 0.2); }
+.youtube .icon, .youtube .btn { background-color: #ff0000; }
+.youtube .info { color: #ff0000; }
+
+
+.linkedin { background-color: rgba(0, 119, 181, 0.2); }
+.linkedin .icon, .linkedin .btn { background-color: #0077b5; }
+.linkedin .info { color: #0077b5; }
+
+
+main .customers-projects{
+    background-color: white;
+    padding:var(--mainP);
+    border-radius:10px;
+    overflow-x:  scroll;
+    width: 90%;
+    margin: 30px auto;
+}
+
+main  .customers-projects .title{
+    margin:0 0 20px;
+}
+
+
+main  table{
+    width:100%;
+    border-spacing:0;
+    color: black;
+}
+
+main  .customers-projects thead{
+    background:var(--border-color);
+}
+
+main  .customers-projects th{
+    text-align:left;
+    padding:15px;
+    font-weight:bold;
+}
+
+main  .customers-projects td{
+    padding:15px;
+    border-bottom:1px solid var(--border-color);
+}
+
+main  .customers-projects tbody tr:hover{
+    background:#fafafa;
+}
+
+
+main .customers-projects  .team-avatars{
+    display:flex;
+}
+
+main  .customers-projects .team-avatars .for-image{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    overflow:hidden;
+    border:2px solid white;
+    margin-left:-12px;
+}
+
+main  .customers-projects .team-avatars .for-image:first-child{
+    margin-left:0;
+}
+
+main .customers-projects table .status{
+    padding:4px 10px;
+    border-radius:6px;
+    font-size:13px;
+    color:white;
+    font-weight:500;
+}
+
+main  .customers-projects table .pending{
+    background-color: #f59e0b;
+}
+
+main  .customers-projects table .in-progress{
+	background-color:#0077b5;
+}
+
+main .customers-projects .completed{
+    background-color: #22c55e;
+}
+
+main .customers-projects .rejected{
+    background-color: #ef4444;
+}
+
+@media(max-width: 768px){
+	main .title , main .content {
+padding: var(--mainP);
+}
+
+}

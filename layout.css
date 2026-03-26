@@ -1,0 +1,306 @@
+:root {
+	--marginTop: 30px;
+	--mainP: 40px;
+	--blue-color: #0075ff;
+	--grey-color: #888;
+	--border-color: #eee;
+	
+}
+
+.for-image img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 768px) {
+	.mobile-removed {
+		display: none
+	}
+}
+
+
+body,
+html {
+	scroll-behavior: smooth;
+	font-family: Sans-Serif;
+	overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px
+}
+
+::-webkit-scrollbar-track {
+	background: #0077b5;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #eee;
+	border-radius: 10px;
+}
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	grid-template: 100px 3fr 50px / 10% 3fr;
+	grid-template-areas: 'nav header' 'nav main' 'nav footer';
+	gap: 20px;
+	text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+	:root {
+		--mainP: 10px
+	}
+	
+	body p {
+		font-size: 15px;
+	}
+	
+}
+
+header {
+	background-color: transparent;
+	grid-area: header;
+	padding-left: 15px;
+}
+
+nav {
+	grid-area: nav;
+	padding-left: 5px;
+	background-color: transparent;
+}
+
+@media (max-width: 768px) {
+	nav {
+		padding-left: 3px;
+	}
+}
+
+main {
+	grid-area: main;
+	background-color: transparent;
+}
+
+footer {
+	grid-area: footer;
+	background-color: transparent;
+}
+
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-top: var(--marginTop);
+}
+
+header .for-input {
+	margin-left: 5px;
+	position: relative
+}
+
+header .for-input i {
+	position: absolute;
+	left: 13px;
+	top: 9px
+}
+
+header input {
+	border-radius: 50px;
+	height: 40px;
+	width: 150px;
+	padding-left: 34px;
+	transition-duration: 0.5s;
+	margin-left: 5px
+}
+
+header input:focus {
+	outline: none;
+	width: 180px;
+	transition-duration: 0.5s;
+}
+
+header .person {
+	display: flex;
+	align-items: center;
+	height: fit-content;
+	margin-right: 15px;
+}
+
+header .person i {
+	transform: translate(35px, 1px);
+	margin-right: 50px;
+	font-size: 24px;
+}
+
+header .person .for-image {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+@media (max-width: 991px) {
+	nav {
+		display: flex;
+		justify-content: center;
+	}
+	
+	nav .all {
+		width: 80%;
+		margin: 30px auto;
+	}
+	
+	nav a {
+		margin-bottom: 20px;
+		width: fit-content;
+		margin: 30px auto;
+	}
+	
+	nav .all a i {
+		font-size: 20px;
+	}
+	
+	nav a p {
+		display: none;
+	}
+}
+
+nav .all {
+	width: 80%;
+	margin: 0 auto 20px;
+}
+
+nav .name {
+	position: relative;
+	width: 98%;
+	padding-top: 20px;
+	margin: 0 auto 30px;
+	margin-left: 15px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: fit-content;
+}
+
+nav .martin {
+	font-size: 20px;
+	font-weight: 800;
+	height: auto;
+	text-transform: capitalize;
+}
+
+/* @media (max-width: 768px) {
+	nav .martin{
+		font-size: 14px
+	}
+} */
+nav .name::before {
+	content: '';
+	position: absolute;
+	bottom: -9px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 15px;
+	height: 15px;
+	background-color: black;
+	border-radius: 50%;
+	border: 2px solid white;
+	z-index: 2;
+}
+
+nav .name::after {
+	content: '';
+	position: absolute;
+	bottom: -3px;
+	width: 85px;
+	height: 2px;
+	background-color: black;
+}
+
+@media (max-width: 991px) {
+	nav {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 768px) {
+	nav .name::after {
+		width: 50px
+	}
+	
+}
+
+nav .links a {
+	color: black;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+nav .links a.active {
+	background-color: #eee;
+}
+
+nav .links a:hover {
+	background-color: #eee;
+}
+
+nav .links a i {
+	margin-right: 10px;
+}
+
+main {
+	background: #f1f5f9;
+	padding: var(--mainP);
+	background-color: #b9c8ff98;
+	min-width: 20%;
+	max-width: 100%
+}
+
+main .repeated-title h1 {
+	text-transform: capitalize;
+	position: relative;
+}
+
+main .repeated-title h1:after,
+main .repeated-title h1:before {
+	content: '';
+	height: 3px;
+	position: absolute;
+	bottom: -7px;
+	left: 0;
+}
+
+main .repeated-title {
+	margin-left: 10px;
+	margin-bottom: 30px;
+}
+
+main .repeated-title h1:before {
+	width: 100px;
+	background-color: white;
+}
+
+main .repeated-title h1:after {
+	width: 25px;
+	background-color: black;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: black;
+	color: white;
+	text-transform: capitalize;
+}

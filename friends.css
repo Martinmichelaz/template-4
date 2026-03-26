@@ -1,0 +1,174 @@
+
+:root {
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #2d3436;
+    --text-muted: #636e72;
+    --primary-blue: #0984e3;
+    --danger-red: #d63031;
+    --vip-gold: #f1c40f;
+    --border-color: #f1f2f6;
+}
+
+
+/* Dashboard Grid Layout */
+main .all .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* User Card Base */
+main .all .user-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+    padding: var(--mainP);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+main .all .user-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+/* Top Phone/Email Icons */
+main .all .top-actions {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 12px;
+}
+
+main .all .top-actions i {
+    color: var(--text-muted);
+    font-size: 14px;
+    cursor: pointer;
+    background: #f1f2f6;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+main .all .top-actions i:hover {
+    background: #e2e8f0;
+}
+
+/* Circular Image Container */
+main .all .for-image {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #dfe6e9;
+    margin: 20px 0 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Name & Title */
+main .all .user-card h3 {
+    margin: 5px 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+main .all .user-card .role {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* User Stats Section */
+main .all .stats-section {
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    padding: var(--mainP) 0;
+    margin-bottom: 10px;
+}
+
+main .all .stat-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: var(--text-main);
+}
+
+main .all .stat-item i {
+    width: 25px;
+    margin-right: 15px;
+    color: #b2bec3;
+    text-align: center;
+}
+
+/* Footer & Buttons */
+main .all .card-footer {
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .all .joined-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+main .all .button-group {
+    display: flex;
+    gap: 10px;
+}
+
+main .all .btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s;
+}
+
+main .all .btn-profile {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+main .all .btn-remove {
+    background-color: var(--danger-red);
+    color: white;
+}
+
+main .all .btn:hover {
+    filter: brightness(1.1);
+}
+
+/* VIP Badge Styling */
+main .all .vip-card::after {
+    content: "VIP";
+    position: absolute;
+    top: 60%;
+    right: 20px;
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgba(241, 196, 15, 0.3);
+    pointer-events: none;
+    z-index: 1;
+}
+
+main .all .vip-card .for-image {
+    border-color: var(--vip-gold);
+}

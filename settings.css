@@ -1,0 +1,580 @@
+main .all .card{
+    background:white;
+    padding: var(--mainP);
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+
+main .all .card h2{
+    margin:0;
+}
+
+main .all .card .desc{
+    color:#777;
+    margin-bottom:25px;
+}
+
+main .all .card .content{
+	width: 100%;
+}
+
+main .all .card .toggle-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+main .all .card .toggle-row .text{
+	flex-shrink: 1;
+}
+main .all .card .small{
+    color:var(--grey-color);
+    font-size:14px;
+}
+
+main .all .card textarea{
+    width:98%;
+    height:120px;
+    margin-top:20px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:12px;
+    resize:none;
+    font-size:14px;
+}
+
+main .all .card .switch{
+    position:relative;
+    width:70px;
+    height:30px;
+}
+
+main .all .card .switch input{
+    display:none;
+}
+
+main .all .card .slider{
+    position:absolute;
+    cursor:pointer;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#ccc;
+    border-radius:30px;
+    transition:.3s;
+}
+
+main .all .card .slider:before{
+    position:absolute;
+    height:24px;
+    width:24px;
+    left:3px;
+    bottom:3px;
+    background:white;
+    border-radius:50%;
+    transition:.3s;
+    font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f00d";
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .all .card input:checked + .slider{
+    background:#1976d2;
+}
+
+main .all .card input:checked + .slider:before{
+    transform:translateX(37px);
+    font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f00c"; 
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .all .card input:checked i{
+	position:absolute;
+    height:24px;
+    width:24px;
+    left:3px;
+    bottom:3px;
+    background:white;
+    border-radius:50%;
+    transition:.3s;
+    z-index: 2;
+}
+
+main .all .general-info{
+    background:white;
+    padding:var(--mainP);
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+main .all .general-info h2{
+    margin:0;
+    font-size:26px;
+}
+
+main .all .general-info .desc{
+    color:#777;
+    margin-bottom:20px;
+}
+
+main .all .general-info .field{
+    margin-bottom:18px;
+    width: 100%;
+}
+
+main .all .general-info .field label{
+    margin-bottom:6px;
+    color:#666;
+    font-size:14px;
+}
+
+main .all .general-info .field input,main .all .general-info .feild .input{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:14px;
+    width: 100%;
+}
+
+main .all .general-info .field.email{
+    gap:10px;
+}
+main .all .general-info .input{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+main .all .general-info .forEmail{
+	width: 90%;
+	overflow: hidden;
+	margin-right: 5px;
+}
+
+main .all .general-info .field.email input{
+    background:#f5f5f5;
+    width: 93%;
+}
+
+main .all .general-info .field.email a{
+    color:var(--blue-color);
+    text-decoration:none;
+    font-size:15px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 15px
+}
+
+main .all .security-info{
+    background:white;
+    padding:var(--mainP);
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+main .all .security-info h2{
+    margin:0;
+    font-size:26px;
+}
+
+main .all .security-info .desc{
+    color:#777;
+    margin-bottom:25px;
+}
+
+main .all .security-info .row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+main .all .security-info .text h3{
+    margin:0;
+    font-size:18px;
+}
+
+main .all .security-info .text p{
+    margin:5px 0 0;
+    color:var(--grey-color);
+    font-size:14px;
+}
+
+main .all .security-info hr{
+    border:none;
+    border-top:1px solid var(--border-color);
+}
+
+main .all .security-info .btn{
+    padding:8px 15px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:14px;
+}
+
+main .all .security-info .btn.blue{
+    background:var(--blue-color);
+    color:white;
+}
+
+main .all .security-info .btn.gray{
+    background:var(--border-color);
+    color:black;
+}
+
+
+main .all .security-info .switch{
+    position:relative;
+    width:70px;
+    height:30px;
+}
+
+main .all .security-info .switch input{
+    display:none;
+}
+
+main .all .security-info .slider{
+    position:absolute;
+    cursor:pointer;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#ccc;
+    border-radius:30px;
+    transition:.3s;
+}
+
+main .all .security-info .slider:before{
+    position:absolute;
+    height:24px;
+    width:24px;
+    left:3px;
+    bottom:3px;
+    background:white;
+    border-radius:50%;
+    transition:.3s;
+    font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f00d";
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .all .security-info input:checked +  .slider{
+    background:#1976d2;
+}
+
+main .all .security-info input:checked + .slider:before{
+    transform:translateX(37px);
+    font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f00c"; 
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .all .security-info .card input:checked i{
+	position:absolute;
+    height:24px;
+    width:24px;
+    left:3px;
+    bottom:3px;
+    background:white;
+    border-radius:50%;
+    transition:.3s;
+    z-index: 2;
+}
+
+
+
+main .all .form-card {
+    background-color: #ffffff;
+    padding: var(--mainP);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+main .all h2 {
+    margin: 0 0 5px 0;
+    font-size: 28px;
+    color: #333;
+}
+
+main .all .form-card .subtitle {
+    margin: 0 0 30px 0;
+    color: var(--grey-color);
+    font-size: 16px;
+}
+
+main .all .form-card .input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+main .all .form-card .input-group:focus-within {
+    border-color: #007bff;
+}
+
+main .all .form-card .icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-right: 1px solid #e0e0e0;
+    color: #666;
+}
+
+main .all .form-card input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 12px 15px;
+    font-size: 15px;
+    outline: none;
+    color: #333;
+    background: transparent;
+}
+
+main .all .form-card input[type="text"]::placeholder {
+    color: #bbb;
+}
+
+main .all .widgets-card {
+    background-color: #ffffff;
+    padding: var(--mainP);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+main .all .widgets-title {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+main .all .widgets-subtitle {
+    margin: 0 0 25px 0;
+    font-size: 16px;
+    color: #8e8e8e;
+}
+
+main .all .control-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+main .all .control-row input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 12px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+main .all .control-row input[type="checkbox"]:checked {
+    border-color: var(--blue-color);
+    display: flex;
+    justify-content: center;
+    align-items : center;
+}
+
+ main .all .control-row input[type="checkbox"]:not(:checked){
+	border-color: red;
+
+} 
+main .all .control-row input[type="checkbox"]:not(:checked)::before,
+main .all .control-row input[type="checkbox"]:checked::after{
+	animation-duration: 0.5s;
+    animation-direction: end;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main .all .control-row input[type="checkbox"]:not(:checked)::before{
+	animation-name:rotate-scale-down ;
+    content: "x";
+    color: white ;
+    background-color: red;
+    
+}
+main .all .control-row input[type="checkbox"]:checked::after {
+    animation-name:rotate-scale-up ;
+    content: "\2713";
+    background-color: var(--blue-color);
+}
+@keyframes rotate-scale-up {
+	0% { transform: scale(1) rotateZ(0); } 
+	50% { transform: scale(2) rotateZ(180deg); width: 50%; height: 50%; } 
+	100% { transform: scale(1) rotateZ(360deg); width: 100%; height: 100%} 
+	
+} 
+
+@keyframes rotate-scale-down {
+  0% {
+    transform: scale(1) rotateZ(360deg);
+    width: 100%;
+    height: 100%;
+  }
+  50% {
+    transform: scale(2) rotateZ(180deg);
+    width: 50%;
+    height: 50%;
+  }
+  100% {
+    transform: scale(1) rotateZ(0);
+  }
+}
+
+main .all .control-row label {
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    user-select: none;
+}
+
+main .all .control-row:last-child {
+    margin-bottom: 0;
+}
+
+main .all .backup-manager-card {
+    background-color: #fff;
+    padding: var(--mainP);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+main .all .backup-manager-card .title {
+    margin: 0 0 5px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+main .all .backup-manager-card .subtitle {
+    margin: 0 0 25px 0;
+    color: var(--grey-color);
+    font-size: 14px;
+}
+
+main .all .time-options {
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--mainP);
+}
+
+main .all .radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+main .all .radio-group input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+main .all .radio-group input[type="radio"]:checked {
+    border-color: #1d9bf0;
+}
+
+main .all .radio-group input[type="radio"]:checked::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #1d9bf0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .all .radio-group label {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+main .all .servers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main .all .server-radio {
+    display: none; 
+}
+
+main .all .server-card {
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+main .all .server-card i {
+    font-size: 18px;
+    color: #333;
+}
+
+main .all .server-card span {
+    font-weight: 500;
+}
+
+main .all .server-radio:checked + .server-card {
+    border-color: #1d9bf0;
+    color: #1d9bf0;
+}
+
+main .all .server-radio:checked + .server-card i {
+    color: #1d9bf0;
+}
